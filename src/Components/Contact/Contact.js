@@ -74,7 +74,7 @@ const Contact = () => {
           <TextField
             id="subject"
             name="subject"
-            label="subject"
+            label="subjects"
             type="text"
             variant="standard"
             fullWidth={true}
