@@ -70,7 +70,7 @@ const Contact = () => {
           />
         </Grid>
 
-        <Grid item>
+        <Grid item lg={10}>
           <TextField
             id="subject"
             name="subject"
