@@ -1,5 +1,7 @@
 import React from 'react';
 import bgimg from '../../Assets/bg1.jpg'
+import Header_Desc from './Header_Desc';
+import TopHeader from './TopHeader';
 const backgroundStyle = {
     backgroundImage: `linear-gradient(to bottom, rgba(171, 47, 82, 0.82) 0%, #ffaf53 100%), 
      url(${bgimg})`,
@@ -9,7 +11,8 @@ const backgroundStyle = {
 const Header = () => {
     return (
         <div style={backgroundStyle}>
-            dsd
+            <TopHeader />
+            <Header_Desc />
         </div>
     );
 };
