@@ -1,6 +1,5 @@
-import { Button, Container, FormControl, FormControlLabel, FormLabel, Grid, Icon, ListItemIcon, MenuItem, Radio, RadioGroup, Select, Slider, TextField, Typography } from '@mui/material';
+import { Button, Container,  Grid,  TextField,} from '@mui/material';
 import { Box } from '@mui/system';
-import SendIcon from '@mui/icons-material/Send';
 import React from 'react';
 import './Contact.css'
 
@@ -46,9 +45,9 @@ const Contact = () => {
             </Grid>
             <Grid  xs={12} lg={6} md={6}>
 
-<form onSubmit={handleSubmit}>
-      <Grid container sx={{mb:'30px'}}>
-        <Grid item>
+     <form onSubmit={handleSubmit}>
+      <Grid container sx={{mb:'30px'}} >
+        <Grid sx={{my:'15px'}} >
           <TextField
             id="name-input"
             name="name"
@@ -57,20 +56,20 @@ const Contact = () => {
             variant="standard"
            
           />
-        </Grid>
-        <Grid item>
+    
+        
           <TextField
             id="age-input"
             name="age"
             label="Email"
             type="text"
             variant="standard"
-            sx={{ml:'35px'}}
+            sx={{ml:'10px',width:'280px'}}
 
           />
         </Grid>
 
-        <Grid item lg={10}>
+        <Grid item lg={10} sx={{mb:'20px'}}>
           <TextField
             id="subject"
             name="subject"
@@ -81,12 +80,33 @@ const Contact = () => {
 
           />
         </Grid>
-        
-    
-        {/* <Button variant="contained" color="primary" type="submit">
-          Submit
-        </Button> */}
 
+        <Grid item lg={10} sx={{mt:'25px'}}>
+          <TextField
+           fullWidth
+           label="message "
+           id="fullWidth"
+           variant="outlined"
+           rows="5"
+           multiline={true}
+          />
+        </Grid>
+       
+        
+       <Grid item lg={10} sx={{mt:'25px'}}> 
+        <Button variant="contained" color="primary" type="submit" 
+         sx={{
+          background: '#ab2f52',
+          width: '41%',
+          borderRadius: '19px',
+          padding: '8px 9px',
+          fontSize: '16px',
+      }
+ }
+        >
+          Submit
+        </Button>
+        </Grid>
         
       </Grid>
     </form>
