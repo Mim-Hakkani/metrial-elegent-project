@@ -6,10 +6,17 @@ import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
 import './Gallery.css'
+import GalleryTitle from './GalleryTitle';
+import GalleryLink from './GalleryLink';
 const Gallery = () => {
     return (
         <div>
-             <ImageList>
+
+      <GalleryTitle />
+      <GalleryLink />
+
+
+    <ImageList>
       <ImageListItem key="Subheader" cols={3}>
       </ImageListItem>
       {itemData.map((item) => (
