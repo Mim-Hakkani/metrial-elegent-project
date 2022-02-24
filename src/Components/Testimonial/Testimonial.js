@@ -2,7 +2,7 @@ import React from 'react';
 
 import img1 from '../../Assets/bg1.jpg'
 import ModeCommentIcon from '@mui/icons-material/ModeComment';
-import  { useRef, useState } from "react";
+
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -14,7 +14,7 @@ import './testimonial.css'
 
 // import required modules
 import { Autoplay,Parallax, Pagination } from "swiper";
-import { Icon, Typography } from '@mui/material';
+import {Avatar, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 
 const reviews = [
@@ -22,7 +22,8 @@ const reviews = [
         id:1,
         name:'hakkani',
         pro:'web designer',
-        quote:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, impedit.'
+        quote:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, impedit.',
+        
     },
 
     {
@@ -47,8 +48,8 @@ const Testimonial = () => {
         <> 
         <Swiper
         style={{
-          "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
+          "--swiper-pagination-color": "#ab2f52",
+          height:'350px'
         }}
         speed={600}
         parallax={true}
@@ -70,7 +71,8 @@ const Testimonial = () => {
           className="parallax-bg"
           style={{
         
-            background:`linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(${img1})`
+            background:`linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(${img1})`,
+        
           }}
           data-swiper-parallax="-23%"
         ></div>
@@ -79,11 +81,13 @@ const Testimonial = () => {
             reviews.map(review=>
                     
               
-                <SwiperSlide   key={review.id}>
-                <Box>
-                  <ModeCommentIcon  
+                <SwiperSlide   key={review.id} >
+                <Box sx={{mt:'75px'}}>
+                  {/* <ModeCommentIcon  
                    sx={{color :'#ab2f52'}}
-                  />
+                  /> */}
+
+                <Avatar alt="Remy Sharp" src={img1} sx={{m:'10px auto'}} />
                    
                    <Typography variant="body2" gutterBottom>
                       {review.quote}
@@ -103,31 +107,6 @@ const Testimonial = () => {
                 </SwiperSlide>
                 )
         }
-
-
-    
-
-
-
-        {/* <SwiperSlide>
-          <div className="title" data-swiper-parallax="-300">
-            Slide 2
-          </div>
-          <div className="subtitle" data-swiper-parallax="-200">
-            Subtitle
-          </div>
-         
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="title" data-swiper-parallax="-300">
-            Slide 3
-          </div>
-          <div className="subtitle" data-swiper-parallax="-200">
-            Subtitle
-          </div>
-         
-        </SwiperSlide> */}
-
 
 
       </Swiper>
