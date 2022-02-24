@@ -5,7 +5,7 @@ import '../Contact/Contact.css'
 import about from '../../Assets/about.jpg'
 const About = () => {
     return (
-        <div style={{ marginTop:'30px',marginBottom:'50px'}}>
+        <div style={{ marginTop:'30px',marginBottom:'50px'}} id="about">
             <Container>
                 <Grid container spacing={2}>
                     <Grid item lg={12} md={12} sm={12}>
@@ -71,7 +71,7 @@ const About = () => {
                            Nam non erat feugiat, pellentesque mi ut, finibus tellus. Ut eget ex sodales, feugiat elit non, semper ex. Sed laoreet lectus nisl, sit amet porttitor lacus porta nec. Quisque sit amet metus sagittis, tincidunt tellus in, efficitur lorem. Sed scelerisque tellus nisl, eget tincidunt elit aliquet vitae. Integer id felis ut ipsum tristique iaculis. Mauris sed nibh enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc sagittis rhoncus sollicitudin. Maecenas eget dui a neque rutrum tincidunt sed non ipsum.
                          
                          </Typography>
-                         <Button variant="contained" sx={{backgroundColor:'#ffaf53'}}>
+                         <Button variant="contained" sx={{backgroundColor:'#ffaf53'}} id="home">
                              Learn More
                          </Button>
                     </Box>

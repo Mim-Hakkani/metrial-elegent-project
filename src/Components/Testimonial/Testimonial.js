@@ -45,7 +45,7 @@ const reviews = [
 
 const Testimonial = () => {
     return (
-        <> 
+        <div id="review"> 
         <Swiper
         style={{
           "--swiper-pagination-color": "#ab2f52",
@@ -110,7 +110,7 @@ const Testimonial = () => {
 
 
       </Swiper>
-      </>
+      </div>
     );
 };
 

@@ -13,7 +13,7 @@ const Contact = () => {
     }
     return (
         <> 
-         <Container>
+         <Container id="contact">
             <Grid container spacing={2}>
                <Grid item lg={12} md={12} sm={12}>
                  <Box sx={{mb:'60px'}}>

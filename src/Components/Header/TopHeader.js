@@ -18,19 +18,19 @@ const TopHeader = () => {
 
             </Grid>
             <Grid item xs={12} sm={8} md={8} lg={8}>
-                <Link href="#" underline="none" >
+                <Link href="/home" underline="none" >
                  <Button   sx={{color:'#fff',padding:'10px 15px',marginTop:'20px'}}> Home</Button> 
                 </Link>
-                <Link href="#" underline="none">
+                <Link href="#about" underline="none">
                    <Button  sx={{color:'#fff',padding:'10px 15px',marginTop:'20px'}}>About  </Button>
                 </Link>
-                <Link href="#" underline="none">
+                <Link href="#gallery" underline="none">
                     <Button   sx={{color:'#fff',padding:'10px 15px',marginTop:'20px'}}>Gallery  </Button>
                 </Link>
-                <Link href="#" underline="none">
+                <Link href="#review" underline="none">
                     <Button   sx={{color:'#fff',padding:'10px 15px',marginTop:'20px'}}>Reviews  </Button>
                 </Link>
-                <Link href="#" underline="none">
+                <Link href="#contact" underline="none">
                     <Button   sx={{color:'#fff',padding:'10px 15px',marginTop:'20px'}}> Contact </Button>
                 </Link>
            </Grid>
